@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@layer base {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    /* Sub-pixel text rendering for thinner fonts on dark backgrounds */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Glassmorphic Components */
+  .glass-panel {
+    @apply bg-white/5 border border-white/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] backdrop-blur-2xl rounded-3xl overflow-hidden;
+  }
+
+  .glass-input {
+    @apply w-full bg-white/5 border border-white/10 text-white placeholder:text-white/30 text-lg md:text-xl rounded-full px-8 py-5 outline-none focus:border-white/30 focus:bg-white/10 transition-all duration-500 font-light tracking-wide;
+  }
+
+  /* Pill shape buttons (Shopify Editions style) */
+  .pill-btn-primary {
+    @apply bg-white text-black font-medium px-8 py-5 rounded-full hover:bg-neutral-200 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] inline-flex items-center justify-center gap-3 text-base;
+  }
+  
+  .pill-btn-secondary {
+    @apply bg-transparent text-white border border-white/20 font-medium px-8 py-5 rounded-full hover:bg-white/10 transition-all duration-300 inline-flex items-center justify-center gap-3 text-base;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
