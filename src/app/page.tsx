@@ -65,7 +65,7 @@ export default function Home() {
               type="text"
               value={repoUrl}
               onChange={(e) => setRepoUrl(e.target.value)}
-              placeholder="Paste a GitHub URL (e.g. github.com/vercel/next.js)"
+              placeholder="Paste any GitHub's Repo URL"
               className="glass-input text-center placeholder:text-white/20 shadow-[0_0_30px_rgba(0,255,255,0.02)]"
               required
               disabled={isLoading}

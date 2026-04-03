@@ -1,86 +1,58 @@
-# PromptGit — The Architectural Monolith
+# PromptGit — The Architectural Synthesis Engine
 
 <p align="center">
-  <img src="https://grainy-gradients.vercel.app/noise.svg" width="100%" height="8" alt="divider" />
+  <img src="https://grainy-gradients.vercel.app/noise.svg" width="100%" height="4" alt="divider" />
 </p>
 
-**PromptGit** is an elite, high-fidelity reverse-engineering engine designed to transform public GitHub repositories into synthetic, expert-level LLM context. Inspired by the cinematic editorial aesthetics of **Shopify Editions** and **iertqa.com**, it provides a stunning, glassmorphic interface for modern "vibe coding" workflows.
+**PromptGit** is an elite architectural synthesis engine designed to bridge the gap between high-scale source code and expert-level AI reasoning. This tool is a mission-critical utility for modern "vibe coding" workflows, providing **Deep Content Extraction** and **Expert Prompt Synthesis** to brief AI agents (Cursor, Claude Code, V0) in seconds.
 
 ---
 
-## ⚡ Core Features
+## 🧬 Core Logic: Recursive Synthesis
 
-- **Architectural Synthesis**: Precisely extracts repository file structures and core functionalities using deep recursive tree parsing.
-- **Expert-Grade Prompting**: Generates sophisticated, outcome-focused prompts that speak the language of professional prompt engineers.
-- **Cinematic Experience**: A high-end, dark-mode interface featuring refractive glassmorphism, fluid Framer Motion animations, and high-tension typography (`EB Garamond` paired with `Inter`).
-- **Resilient Backend**: Built with in-flight deduplication, in-memory caching, and automatic branch fallback (`main`/`master`) for maximum reliability.
-- **Multi-Model Intelligence**: Leverages OpenRouter for high-quality LLM synthesis with cascading fallback mechanisms.
+Raw repository data is full of noise. **PromptGit** filters that noise into pure signal.
 
----
-
-## 🛠️ Tech Stack
-
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Intelligence**: [OpenRouter API](https://openrouter.ai/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Typography**: [Google Fonts](https://fonts.google.com/) (EB Garamond & Inter)
+1. **Deep Extraction**: Our system recursively crawls your repository's entire file tree using Git Trees API, identifying the exact architectural heartbeat of your project.
+2. **Contextual Fallback**: We handle repository branching with surgical logic—automatically falling back between `main` and `master` to fetch metadata and recursive context without failure.
+3. **Synthesis Engine**: We don't just list files. We synthesize repository metadata, README documentation, and file structure into an outcome-focused technical masterpiece—the kind of prompt an expert engineer would write to brief a teammate.
 
 ---
 
-## 🚀 Getting Started
+## ⚡ Outcome-Focused Features
 
-### Prerequisites
-
-- Node.js 20+
-- An [OpenRouter API Key](https://openrouter.ai/keys)
-- A [GitHub Personal Access Token](https://github.com/settings/tokens) (Optional, for higher rate limits)
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/PromptGit.git
-   cd PromptGit
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Configure environment variables:
-   Create a `.env.local` file in the root directory:
-   ```env
-   OPENROUTER_API_KEY=your_openrouter_key
-   GITHUB_TOKEN=your_github_token (optional)
-   ```
-
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
+- **Architectural Clarity**: Get an instant, hierarchical ASCII file tree that maps your project's logic at a glance.
+- **Expert Briefing**: Generate high-fidelity, synthetic prompts designed to allow LLMs to build, refactor, or understand complex repositories in one pass.
+- **Zero-Noise Context**: Our engine strictly truncates and formats repository context to ensure the AI focuses only on what matters for the technical goal.
+- **Resilient Foundation**: Built with in-flight deduplication and in-memory caching to ensure lightning-fast hydration for repeat repository lookups.
+- **Open Intelligence**: Cascading fallback mechanics via **OpenRouter** to ensure your synthesis never stalls.
 
 ---
 
-## 🌐 Deployment (Vercel)
+## 📐 Technical Blueprint
 
-1. Push your code to a GitHub repository.
-2. Import the project into your [Vercel Dashboard](https://vercel.com/new).
-3. Add the following Environment Variables:
-   - `OPENROUTER_API_KEY`
-   - `GITHUB_TOKEN` (Highly recommended for production)
-4. Deploy.
+### Requirements
+- **Runtime**: Node.js 20+
+- **Identity**: OpenRouter API Key
+- **High-Limits**: Optional GitHub Personal Access Token (PAT)
+
+### Rapid Deployment
+1. **Clone**: `git clone https://github.com/Himanshu-Vishwakarma-GH/PromptGit.git`
+2. **Ignite**: `npm install`
+3. **Configure**: Add `OPENROUTER_API_KEY` to `.env.local`
+4. **Deploy**: `npm run dev`
 
 ---
 
-## 📜 License
+## 🔗 Going Live (Vercel)
 
-Distributed under the MIT License. See `LICENSE` for more information.
+**PromptGit** is ready for professional deployment. To launch your own instance of the synthesis engine:
+
+1. Connect your repository to **Vercel**.
+2. Configure **Environment Variables** (`OPENROUTER_API_KEY`).
+3. Deploy and begin synthesizing repository contexts.
 
 ---
 
 <p align="center">
-  Built for the age of agentic coding.
+  Built for the age of agentic coding. Designed for architectural reasoning.
 </p>
