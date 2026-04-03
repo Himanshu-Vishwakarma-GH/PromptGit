@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter, EB_Garamond } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const serif = EB_Garamond({ subsets: ["latin"], variable: "--font-serif", weight: ["400", "500", "600"] });
 
 export const metadata: Metadata = {
-  title: "PromptGit — The Architectural Monolith",
+  title: "PromptGit",
   description: "High-fidelity AI prompt reverse-engineering from GitHub.",
 };
 
@@ -29,8 +30,16 @@ export default function RootLayout({
 
         {/* Cinematic Header Nav */}
         <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 mix-blend-difference">
-          <div className="flex items-center gap-2 font-serif text-2xl tracking-wide text-white">
-            <span className="opacity-80">Prompt</span>Git
+          <div className="flex items-center gap-3 font-serif text-2xl tracking-wide text-white">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.05)]">
+              <Image 
+                src="/icon.png" 
+                alt="PromptGit Logo" 
+                fill
+                className="object-cover"
+              />
+            </div>
+            <span className="opacity-80">PromptGit</span>
           </div>
           <div className="hidden sm:flex items-center gap-6 text-xs font-mono tracking-[0.2em] text-white/50 uppercase">
             <a 
